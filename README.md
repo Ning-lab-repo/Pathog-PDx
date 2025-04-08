@@ -6,11 +6,17 @@ This retrospective multicenter study was conducted on ill children for the deriv
 Code:
 
 Data preparation:
+
 1 data preparation.py
+
 Base models:
+
 2 RandomForest.py
+
 3 GBDT.py
+
 4 XGB.py
+
 5 LightGBM.py
 
 Pathog-PDx model:
