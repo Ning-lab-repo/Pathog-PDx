@@ -8,7 +8,7 @@ Unlike conventional approaches, Pathog-PDx processes accessible clinical variabl
 
 In evaluations across multiple cohorts (including prospective assessment of 1,338 patients), Pathog-PDx showed promising results with AUCs of 0.86-0.90 for distinguishing bacterial, viral and fungal infections, and 0.88 for identifying mixed infections. The study was approved by institutional review boards at all participating centers. The system has been implemented as a practical web-based decision support tool (https://pathogpdx.zzu.edu.cn).
 
-<img src="FigTable/Figure1.png" width="1000"/>
+<img src="FigTable/Figure 1.jpg" width="1000"/>
 
 ## Prerequisites:
 
