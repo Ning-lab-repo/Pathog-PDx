@@ -2,21 +2,22 @@
 
 ## Introduction
 
-Upper respiratory tract infection, bronchitis, and pneumonia are the three most common respiratory diseases in children, which are often caused by pathogens infection in clinical practice. They have similar symptoms, but treatment plans vary with different respiratory tract infections (RTIs) pathogens. This study aimed to establish and validate an explainable prediction model based on the machine learning (ML) approach for pan-pathogens in children, enabling more precise investigation and individualized clinical management.
-This retrospective multicenter study was conducted on ill children for the derivation and validation of the prediction model. The study included 133,162 children admitted to The First Affiliated Hospital of Xiamen University (XMFH) from January 2015 to September 2023, Xiamen’s Children Hospital (XMCH) from January 2021 to December 2023, Shenzhen Second People’s Hospital (SSPH) from January 2018 to December 2023, PIC, and MIMIC-III databases. The derivation cohort, consisting of XMFH, PIC, and MIMIC-III databases, was separated for training and internal validation, and 2 external cohorts from XMCH and SSPH was employed for external validation. With 40 medical characteristics easily obtained or evaluated from the first examination after admission, ML algorithms were used to construct prediction models. Several evaluation indexes, including the area under thereceiver-operating-characteristic curve (AUC), were used to compare the predictive performance. The SHapley Additive exPlanation method was used to rank the feature importance and explain the final model.
-
+Pediatric respiratory tract infections continue to pose a significant global health challenge, with current diagnostic approaches often limited by delays in pathogen identification that frequently lead to empirical antibiotic use. While artificial intelligence has demonstrated potential in infection diagnosis, existing models have largely focused on single pathogens or have not been specifically optimized for pediatric populations. To achieve species-level identification of respiratory pathogens and prognosticates critical outcomes, we developed Pathog-PDx, a multi-task system that classifies 22 infectious pathogens and predicts ICU admission risk, integrating predicted sites of infection as an auxiliary factor in pathogen identification, applicable to both monoinfections and mixed infection
+Unlike conventional approaches, Pathog-PDx processes accessible clinical variables (laboratory results, vital signs, demographics) to identify pathogens and clinically relevant co-infection patterns—such as Mycoplasma pneumoniae with respiratory syncytial virus. The model was  trained on data from 134,500 children across diverse age groups and disease severity levels. Through explainable AI (SHAP analysis), the model reveals interpretable biomarkers, enhancing clinical trust and decision support.
+In evaluations across multiple cohorts (including prospective assessment of 1,338 patients), Pathog-PDx showed promising results with AUCs of 0.86-0.90 for distinguishing bacterial, viral and fungal infections, and 0.88 for identifying mixed infections. The study was approved by institutional review boards at all participating centers. The system has been implemented as a practical web-based decision support tool (https://pathogpdx.zzu.edu.cn).
+<img src="FigTable/Figure 1.png" width="1000"/>
 
 ## Prerequisites:
 
 The tool was developed using the following dependencies:
 
 1. Python (3.11.7 or greater)
-2. NumPy (1.24 or greater).
-3. pandas (1.5.3 or greater).
-4. matplotlib (3.7.2 or greater).
-5. shap (0.43 or greater).
-6. scikit-learn (1.2.2 or greater).
-7. scipy (1.10 or greater).
+2. NumPy (1.26.4 or greater).
+3. pandas (2.1.4 or greater).
+4. matplotlib (3.8.0 or greater).
+5. shap (0.47.2 or greater).
+6. scikit-learn (1.4.2 or greater).
+7. scipy (1.11.4 or greater).
 
 ## Code:
 
