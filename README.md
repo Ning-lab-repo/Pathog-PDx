@@ -3,9 +3,12 @@
 ## Introduction
 
 Pediatric respiratory tract infections continue to pose a significant global health challenge, with current diagnostic approaches often limited by delays in pathogen identification that frequently lead to empirical antibiotic use. While artificial intelligence has demonstrated potential in infection diagnosis, existing models have largely focused on single pathogens or have not been specifically optimized for pediatric populations. To achieve species-level identification of respiratory pathogens and prognosticates critical outcomes, we developed Pathog-PDx, a multi-task system that classifies 22 infectious pathogens and predicts ICU admission risk, integrating predicted sites of infection as an auxiliary factor in pathogen identification, applicable to both monoinfections and mixed infection
+
 Unlike conventional approaches, Pathog-PDx processes accessible clinical variables (laboratory results, vital signs, demographics) to identify pathogens and clinically relevant co-infection patterns—such as Mycoplasma pneumoniae with respiratory syncytial virus. The model was  trained on data from 134,500 children across diverse age groups and disease severity levels. Through explainable AI (SHAP analysis), the model reveals interpretable biomarkers, enhancing clinical trust and decision support.
+
 In evaluations across multiple cohorts (including prospective assessment of 1,338 patients), Pathog-PDx showed promising results with AUCs of 0.86-0.90 for distinguishing bacterial, viral and fungal infections, and 0.88 for identifying mixed infections. The study was approved by institutional review boards at all participating centers. The system has been implemented as a practical web-based decision support tool (https://pathogpdx.zzu.edu.cn).
-<img src="FigTable/Figure 1.png" width="1000"/>
+
+<img src="FigTable/Figure1.png" width="1000"/>
 
 ## Prerequisites:
 
