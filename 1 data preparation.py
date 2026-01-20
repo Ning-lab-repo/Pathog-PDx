@@ -21,7 +21,7 @@ data_enc=pd.concat([data_CatogryEnc,data_Number],axis=1)
 data_enc.dropna(thresh=data_enc.shape[1]*0.65,inplace=True)
 data_enc.shape
 data_targetClass=data['Infection site']
-data_feature=data_enc.drop(columns=['Infection site'])
+data_feature=data_enc
 X_train, X_test, y_train, y_test=train_test_split(data_feature,data_targetClass,stratify=data_targetClass,test_size=0.3,random_state=42)
 #imp=SimpleImputer(missing_values=np.nan,strategy='most_frequent')
 imp=KNNImputer(n_neighbors=300)
