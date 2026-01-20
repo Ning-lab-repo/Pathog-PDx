@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 import warnings
-from sklearn.preprocessing import MinMaxScaler
+
 warnings.filterwarnings("ignore")
 data=pd.read_csv('~.csv')
 data_featureCate=data[['Gender(M/F)']]
